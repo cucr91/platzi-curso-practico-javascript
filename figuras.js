@@ -111,7 +111,7 @@ function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert("El area del cuadrado es de : " + area + " centimetros.");
+    alert("El area del cuadrado es de : " + area + " centimetros 2");
 }
 
 function calcularPerimetroTriangulo(){
@@ -125,10 +125,10 @@ function calcularPerimetroTriangulo(){
 }
 
 function calcularAreaTriangulo(){
-    //const input1 = document.getElementById("inputTriangulo1");
-    //const input2 = document.getElementById("inputTriangulo2");
-    //const input3 = document.getElementById("inputTriangulo3");
-    //const areaTotal = areaTriangulo(valueTotal);
+   /* const input = document.getElementById("inputTriangulo4");
+    const value4 = input.value;    
+    const areaT = (parseInt(input4.value) *  parseInt(input3.value)) / 2;
+    alert("El area del triangulo es de: " + areaT + " centimetros 2"); */
     alert("Lamentamos las molestias, por el momento esta función no está disponible"); 
 }
 
@@ -150,5 +150,34 @@ function calcularAreaCirculo(){
     const input = document.getElementById("inputCirculo");
     const value = input.value;    
     const areaCirculo = (value * value) * PI;
-    alert("El area del circulo es de : " + areaCirculo + " centimetros.");
+    alert("El area del circulo es de : " + areaCirculo + " centimetros 2");
+}
+
+
+//TRIANGULO ISOCELES
+
+function trianguloIsoceles(){
+    let lado1 = document.getElementById("isoLado1");
+    let iLado1 = parseFloat(lado1.value);
+
+    let lado2 = document.getElementById("isoLado2");
+    let iLado2 = parseFloat(lado2.value);
+
+    let base = document.getElementById("isoBase");
+    let iBase = parseFloat(base.value);
+
+    if(iLado1 != iLado2){
+        alert("No se puede calcular debido a que los lados son diferentes");
+    }else{
+        const pequenoLado2 = iBase /2; 
+        const pequenoBase = iLado1;
+
+        const pequenoLado2Cuadrado = pequenoLado2 * pequenoLado2;
+        const pequenoBaseCuadrado = pequenoBase * pequenoBase;
+         
+        let pequenoLado1 = Math.sqrt(pequenoBaseCuadrado - pequenoLado2Cuadrado);
+
+        const grandeAltura = pequenoLado1;
+        alert("La altura del triangulo es: " + grandeAltura + " centimetros.");
+    }
 }

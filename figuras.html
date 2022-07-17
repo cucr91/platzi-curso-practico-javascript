@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Figuras</h1>
+        <h1>Calculo Figuras Geometricas</h1>
         <p>Primer taller de calentamiento en el curso practico de JavaScript</p>
     </header>
     <section>
@@ -40,7 +40,11 @@
               </label> 
             <input id="inputTriangulo3" type="number" /> </br>
             <button type="button" onclick="calcularPerimetroTriangulo()"> Calcular Perimetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()"> Calcular Area  </button>   
+            <label for="inputTriangulo4">
+                Escribe la altura del triangulo 
+              </label> 
+            <input id="inputTriangulo4" type="number" /> </br>
+            <button type="button" onclick="calcularAreaTriangulo()"> Calcular Area</Area>  </button>   
         </form>
     </section>
 
@@ -56,6 +60,22 @@
             <button type="button" onclick="calcularAreaCirculo()">Calcular Area</button>   
         </form>
     </section>
+
+    <section>
+      <h2>Triangulo Isósceles</h2>
+          <label for="isoLado1">Ingresa el tamaño del primer lado</label>
+          <input name="isoLado1" id="isoLado1" type="number"> </br>
+          <label for="isoLado2">Ingresa el tamaño del segundo lado</label>
+          <input name="isoLado2" id="isoLado2" type="number"> </br>
+          <label for="isoBase">Ingresa el tamaño de la base</label>
+          <input name="isoBase" id="isoBase" type="number"></br>
+          <button type="button" onclick="trianguloIsoceles()">Calcular Area triangulo isoceles </button>
+      </form>
+    </section>
+    <footer>
+      <br> 
+      Hecho con amor por Camilo <3 </br>
+     </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>
