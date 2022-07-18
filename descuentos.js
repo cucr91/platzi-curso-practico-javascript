@@ -80,9 +80,10 @@ function onClickButtonPriceDiscountCuopon(){
     }
     const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
-  //const  resultPC = document.getElementById("ResultPC");
-  // resultPC.innerText = "El precio con cupon de descuento es de: $" + precioConDescuento;
-  alert("Felicidades, tu cupon de descuento da el precio de: $" + precioConDescuento);
+  const  resultPC = document.getElementById("ResultPC");
+   resultPC.innerText = "El precio con cupon de descuento es de: $" + precioConDescuento;
+  //alert("Felicidades, tu cupon de descuento da el precio de: $" + precioConDescuento);
   console.log(descuento)
   console.log(priceValue)
   }
+pw

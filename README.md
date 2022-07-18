@@ -16,3 +16,10 @@
  -  tercer paso: crear funciones
  - cuarto paso: Integrar javascrip en Html
   
+
+## Taller Nª 3  Promedio, mediana y moda
+
+ -  Primer paso: Definir formulas
+ -  Segundo paso: Implementar las formulas en Javascrip
+ -  tercer paso: crear funciones
+ -  cuarto paso: Integrar javascrip en Html  
